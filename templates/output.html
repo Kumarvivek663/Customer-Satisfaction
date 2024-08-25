@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Prediction</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url('/static/output.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            color: black;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        h2 {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 28px;
+            color: black;
+            margin: 0;
+        }
+        
+        #button-container {
+            position: fixed;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        #src {
+            border: none;
+            border-radius: 50px;
+            background-color: #28a745;
+            color: whitesmoke;
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        #src:hover {
+            background-color: #218838;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .source {
+            font-size: 2rem;
+            color: #000000;
+            margin-top: 20px;
+            line-height: 1.6;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Your passenger will be: {{ output }}</h2>
+
+    <div id="button-container">
+        <p class="source"><b>Source of the Project</b></p>
+        <a id="src" href="https://github.com/Kumarvivek663/Customer-Satisfaction">GET SOURCE CODE</a>
+    </div>
+</body>
+
+</html>
